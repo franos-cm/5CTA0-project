@@ -200,7 +200,7 @@ Before you start working on the tasks, read through **`python_tutorial.ipynb`**.
 - Write your code where you see the `🧠 Your solution` marker, replacing the `TODO` placeholder.
 - If you don't know a task, **leave it untouched**, the notebook still runs top to bottom.
 - Do **not** modify any other code or cell structure.
-- Written discussion answers go in the markdown cells labelled **"🧠 Your solution — Task X.Y"**.
+- Written discussion answers go in the markdown cells labeled **"🧠 Your solution — Task X.Y"**.
 
 
 ### 8 · Finishing a working session & getting back to work

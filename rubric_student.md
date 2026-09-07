@@ -69,7 +69,7 @@ This rubric shows what is graded and what partial credit looks like. Each task's
 
 | Insufficient (0 pts) | Sufficient (1.5 pts) | Excellent (3 pts) |
 |---|---|---|
-| Not implemented, or the template is wrong | Filter runs but the ECG is not zero-meaned, or no refractory constraint | Cross-correlation of the zero-mean noisy ECG with the QRS template, normalised, with 250 ms minimum peak spacing |
+| Not implemented, or the template is wrong | Filter runs but the ECG is not zero-meaned, or no refractory constraint | Cross-correlation of the zero-mean noisy ECG with the QRS template, normalized, with 250 ms minimum peak spacing |
 
 #### 1.3c · Detection performance and limitations (3 pts)
 
@@ -239,7 +239,7 @@ This rubric shows what is graded and what partial credit looks like. Each task's
 
 | Insufficient (0 pts) | Sufficient (0.5 pts) | Excellent (1 pt) |
 |---|---|---|
-| ROC absent | Plotted but the axes are unlabelled or the sweep misses part of the feature range | Plotted over the full swept threshold range |
+| ROC absent | Plotted but the axes are unlabeled or the sweep misses part of the feature range | Plotted over the full swept threshold range |
 
 #### Empirical and analytic AUC (2 pts)
 
@@ -393,8 +393,8 @@ This rubric shows what is graded and what partial credit looks like. Each task's
 
 ## Bonus: Extra Candidate Features (+2.5 each, max +5)
 
-*Did you design additional, distinct, well-analysed features beyond the three required in Task 3.1?*
+*Did you design additional, distinct, well-analyzed features beyond the three required in Task 3.1?*
 
 | Insufficient (0 pts) | Sufficient (+2.5 pts) | Excellent (+5 pts) |
 |---|---|---|
-| Only the three required features, or the extras are trivial or not analysed | One extra distinct feature, properly analysed with its own per-class Gaussian fit and AUC | Two extra distinct features, each properly analysed, for five features in total |
+| Only the three required features, or the extras are trivial or not analyzed | One extra distinct feature, properly analyzed with its own per-class Gaussian fit and AUC | Two extra distinct features, each properly analyzed, for five features in total |
