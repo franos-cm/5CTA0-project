@@ -122,7 +122,30 @@ After it finishes, **close and reopen the terminal** (in VS Code: close the term
 uv --version
 ```
 
-If `uv` isn't found, the terminal wasn't reopened after installing — repeat the close/reopen step above.
+You should see a version number, for example `uv 0.11.21`.
+
+<details>
+<summary><b>Says <code>uv is not recognized</code> or <code>uv: command not found</code>?</b></summary>
+
+Most likely, uv is installed, but programs that were already open, including VS Code, do not know about it yet.
+
+**Restart your laptop and try `uv --version` again.**
+
+To fix only the terminal you are working in right now, without restarting, run the line for your system.
+
+```powershell
+# Windows (PowerShell)
+$env:Path = "$env:USERPROFILE\.local\bin;$env:Path"
+```
+
+```bash
+# macOS / Linux
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+If uv is still not found after restarting your laptop, the install itself did not finish. Run the install command above once more and check its output for errors.
+
+</details>
 
 ### 3 · Create a virtual environment
 
