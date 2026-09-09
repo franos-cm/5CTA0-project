@@ -12,3 +12,5 @@ Pillow # image processing (PIL.Image)
 onnxruntime # deep learning (used for LV segmentation model)
 ipywidgets # interactive widgets for notebooks
 notebook # for running Jupyter notebooks
+scipy # for signal processing functions
+pandas # for some quick descriptive statistics
