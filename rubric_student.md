@@ -19,6 +19,8 @@ This rubric shows what is graded and what partial credit looks like. Each task's
 
 > **How the criteria map to the notebook.** This rubric follows the task structure of the assignment. Tasks 1.3, 2.2, 2.3, 4.2 and 4.3 are split into lettered subtasks in the notebook, so their criteria below use those same ids (1.3a, 2.2b, 4.3d and so on). Every other task is a single notebook prompt, so its criteria are listed by name and carry no letter.
 
+> **Broken notebooks.** If your notebook fails to run top-to-bottom, 1 point is deducted from your total grade. Always run `check_my_notebook.py` before submitting to avoid this.
+
 ---
 
 ## Part 1 · Data Loading, Exploration and R-Peak Detection (10 pts)
