@@ -2,7 +2,7 @@
 
 **GRADE = Attained points (max 100 + 5 bonus report + 5 bonus features)**
 
-This rubric shows what is graded and what partial credit looks like. Each task's notebook prompt remains the source of truth for exact requirements and variable names.
+This rubric shows what is graded and what partial credit looks like. Each task's notebook prompt gives the exact requirements and variable names.
 
 | Part | Topic | Points |
 |---|---|---|
@@ -153,7 +153,7 @@ This rubric shows what is graded and what partial credit looks like. Each task's
 
 | Insufficient (0 pts) | Sufficient (2.5 pts) | Excellent (5 pts) |
 |---|---|---|
-| Nothing, or one estimator with no LF/HF | Fewer than two estimators overlaid, or LF/HF not reported per estimator, or no bias-variance and leakage discussion | At least two Ch 12 estimators overlaid, LF/HF per estimator, canonical choice justified, and a quantitative bias-variance plus leakage discussion at the 0.15 Hz boundary |
+| Nothing, or one estimator with no LF/HF | Fewer than two estimators overlaid, or LF/HF not reported per estimator, or no bias-variance and leakage discussion | At least two Ch 12 estimators overlaid, LF/HF per estimator, final choice justified, and a quantitative bias-variance plus leakage discussion at the 0.15 Hz boundary |
 
 #### 2.3c · AR with AIC order selection (4 pts)
 
@@ -165,13 +165,13 @@ This rubric shows what is graded and what partial credit looks like. Each task's
 
 | Insufficient (0 pts) | Sufficient (1 pt) | Excellent (2 pts) |
 |---|---|---|
-| Comparison not performed | Side-by-side LF/HF reported but the discussion is superficial | Welch and AR overlaid with shaded LF/HF bands, absolute and relative gap reported, methodological trade-off articulated |
+| Comparison not performed | Side-by-side LF/HF reported but the discussion is superficial | Welch and AR overlaid with shaded LF/HF bands, absolute and relative gap reported, trade-off between the two methods explained |
 
 #### 2.3e · Reflection on stationarity (1 pt)
 
 | Insufficient (0 pts) | Sufficient (0.5 pts) | Excellent (1 pt) |
 |---|---|---|
-| Consequences not discussed | Conclusion connects only vaguely to the PSD framework | Conclusion states what the stationarity finding means for PSD framework validity |
+| Consequences not discussed | Conclusion connects only vaguely to the PSD framework | Conclusion states whether the stationarity finding leaves the PSD framework valid |
 
 ### Task 2.4 · Time-frequency LF/HF trajectory (5 pts)
 
@@ -215,11 +215,11 @@ This rubric shows what is graded and what partial credit looks like. Each task's
 |---|---|---|
 | No AUC reported | AUC reported without the per-class Gaussian fits | Every candidate has a per-class Gaussian fit and a reported analytic AUC |
 
-#### Canonical pick (2 pts)
+#### Final pick (2 pts)
 
 | Insufficient (0 pts) | Sufficient (1 pt) | Excellent (2 pts) |
 |---|---|---|
-| Nothing promoted into `feat_N` and `feat_V` | Promoted, but the pool and the pick are not justified | Promoted into `feat_N` and `feat_V`, with both the pool and the pick justified |
+| Nothing assigned to `feat_N` and `feat_V` | Assigned, but the pool and the pick are not justified | Assigned to `feat_N` and `feat_V`, with both the pool and the pick justified |
 
 #### Separation and target (2 pts)
 
@@ -253,7 +253,7 @@ This rubric shows what is graded and what partial credit looks like. Each task's
 
 | Insufficient (0 pts) | Sufficient (0.5 pts) | Excellent (1 pt) |
 |---|---|---|
-| Operating point not marked and no clinical framing | Operating point not marked on the ROC, or the AUC is not contextualised clinically | NP operating point marked, agreement between the two AUCs noted, AUC contextualised clinically |
+| Operating point not marked and no clinical framing | Operating point not marked on the ROC, or the AUC is not interpreted clinically | NP operating point marked, agreement between the two AUCs noted, AUC interpreted clinically |
 
 ### Task 3.3 · Youden's J (3 pts)
 
@@ -273,7 +273,7 @@ This rubric shows what is graded and what partial credit looks like. Each task's
 
 ### Task 3.4 · Bayesian decision-rule design (5 pts)
 
-*Are the three decision rules implemented and compared, and are the choice of selection metric and the deployed frame justified on clinical grounds?*
+*Are the three decision rules implemented and compared, and are the choice of selection metric and the chosen rule justified on clinical grounds?*
 
 #### Priors and one rule (2 pts)
 
@@ -291,9 +291,9 @@ This rubric shows what is graded and what partial credit looks like. Each task's
 
 | Insufficient (0 pts) | Sufficient (0.5 pts) | Excellent (1 pt) |
 |---|---|---|
-| Nothing promoted into `predict_pvc(feat)` | Promoted, but the metric choice is not justified on clinical grounds | A rule selected under a clinically-justified metric and promoted into `predict_pvc(feat)` |
+| `predict_pvc(feat)` not implemented | Implemented, but the metric choice is not justified on clinical grounds | A rule selected under a clinically justified metric and implemented as `predict_pvc(feat)` |
 
-#### SSP insights (1 pt)
+#### Interpretation (1 pt)
 
 | Insufficient (0 pts) | Sufficient (0.5 pts) | Excellent (1 pt) |
 |---|---|---|
@@ -351,11 +351,11 @@ This rubric shows what is graded and what partial credit looks like. Each task's
 
 | Insufficient (0 pts) | Sufficient (0.5 pts) | Excellent (1 pt) |
 |---|---|---|
-| The two methods are not compared | Quantitative comparison with no geometric reasoning | Quantitative comparison tied to LV geometry through the longitudinal-shortening factor that FAC ignores |
+| The two methods are not compared | Quantitative comparison with no geometric reasoning | Quantitative comparison explained by the longitudinal shortening that FAC ignores |
 
 ### Task 4.3 · MLE, Fisher information and CRLB (22 pts)
 
-*Are $\sigma$ estimated empirically, the MLE derived and shown efficient, the CRLB computed, the parameter-transformation CRLB on EF derived, and the CI-width-versus-$N$ plot produced and discussed?*
+*Is $\sigma$ estimated empirically? Is the MLE derived and shown to be efficient? Is the CRLB computed, and the parameter-transformation CRLB on EF derived? Is the CI-width-versus-$N$ plot produced and discussed?*
 
 #### 4.3a · Estimate $\sigma$ (3 pts)
 
@@ -367,19 +367,19 @@ This rubric shows what is graded and what partial credit looks like. Each task's
 
 | Insufficient (0 pts) | Sufficient (2.5 pts) | Excellent (5 pts) |
 |---|---|---|
-| Not attempted, or the MLE is asserted rather than derived and no MLE-based EF is reported | One of the two parts present. Either the derivation without the EF, or the EF with the MLE only asserted | Log likelihood written and differentiated to show the sample mean is the MLE, and the MLE-based EF coded at the prompt's $N$ |
+| Not attempted, or the MLE is stated without derivation and no MLE-based EF is reported | One of the two parts present. Either the derivation without the EF, or the EF with the MLE stated but not derived | Log likelihood written and differentiated to show the sample mean is the MLE, and the MLE-based EF coded at the prompt's $N$ |
 
 #### 4.3c · Fisher information and CRLB (8 pts)
 
 | Insufficient (0 pts) | Sufficient (4 pts) | Excellent (8 pts) |
 |---|---|---|
-| Nothing attempted, or the CRLB is quoted rather than derived | Two of the three parts present. Typically the Fisher information derived and the CRLB evaluated, with efficiency asserted rather than shown | Fisher information derived from the expected second derivative, CRLB evaluated for $N = 1$ and $N = 3$, and the MLE shown to achieve the bound with the $\sqrt{N}$ variance reduction reported |
+| Nothing attempted, or the CRLB is quoted without derivation | Two of the three parts present. Typically the Fisher information derived and the CRLB evaluated, with efficiency claimed but not checked | Fisher information derived from the expected second derivative, CRLB evaluated for $N = 1$ and $N = 3$, and the MLE shown to achieve the bound with the $\sqrt{N}$ variance reduction reported |
 
 #### 4.3d · EF CRLB by the delta method (6 pts)
 
 | Insufficient (0 pts) | Sufficient (3 pts) | Excellent (6 pts) |
 |---|---|---|
-| Nothing attempted, or the gradient is wrong, which invalidates everything downstream | Two or three of the four parts present. Typically the gradient and the 95 % CI, but no CI-width plot or no trade-off discussion | Gradient derived, 95 % CI on EF at $N = 3$ computed, CI full width plotted against $N$ with the clinical target marked, and the variance-versus-bias trade-off of averaging more frames discussed |
+| Nothing attempted, or the gradient is wrong, so the CI and the plot are wrong too | Two or three of the four parts present. Typically the gradient and the 95 % CI, but no CI-width plot or no trade-off discussion | Gradient derived, 95 % CI on EF at $N = 3$ computed, CI full width plotted against $N$ with the clinical target marked, and the variance-versus-bias trade-off of averaging more frames discussed |
 
 ---
 
