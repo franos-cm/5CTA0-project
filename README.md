@@ -216,6 +216,8 @@ Groups are formed through the **enrollment system in Canvas** — sign up for a 
 
 Submit **only** your notebook through Ans, renamed to **`project_group<groupnumber>.ipynb`** (for example `project_group12.ipynb`), using your group number.
 
+Together with the notebook, **each student must individually** fill out the peer-review form: [Lab Peer Evaluation Form v2027 (5CTA0)](https://forms.cloud.microsoft/e/HB3xeS7r6J). Unlike the notebook, this is not a group submission: every group member fills it out themselves.
+
 Before submitting:
 
 1. Run **Kernel → Restart Kernel and Run All Cells** and verify there are no errors.
@@ -231,6 +233,7 @@ Before submitting:
    Note that this does not grade your answers, it only checks that the notebook opens, is named correctly, ran top-to-bottom, and has no errors. Tasks you left blank are reported as a friendly ⚠️ note (not an error), so a partial notebook still passes.
 
 6. Upload the notebook file to Ans.
+7. Each group member individually fills out the [peer-review form](https://forms.cloud.microsoft/e/HB3xeS7r6J).
 
 > [!WARNING]
 > A notebook that cannot be executed from top to bottom will receive a significant penalty.
